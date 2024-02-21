@@ -4,6 +4,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
@@ -50,6 +56,13 @@
       #form {
         margin: 0;
       }
+      #box1 {
+        border-bottom: 1px solid black;
+      }
+      .p1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+      }
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -59,14 +72,14 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>SardininaTravel</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <img src="./assets/img/B31A7A3E-85D1-48FE-9489-729A1D66B2CC.png" width="150px" />
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">- Sardinian's Travel -</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -88,7 +101,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle pb-3"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -118,19 +131,27 @@
 
     <div class="container">
       <div class="header">
-        <div class="box1">
+        <div class="box1" id="box1">
           <h1 class="display-1">SardinianTravel</h1>
+
           <p class="fst-italic font-family-">-Sardinan's tour operator</p>
         </div>
-        <div class="box1">Vi presentiamo alcune delle nostre proposte</div>
-        <a href="#" class="btn btn-primary mt-5 ms-4">Show more</a>
+
+        <div class="box1">
+          <p class="p1">
+            “Nel viaggio c’è un certo sapore di libertà, di semplicità… un certo fascino dell’orizzonte senza limiti,
+            del percorso senza ritorno, della notte senza tetto, della vita senza superfluo” <br />
+            <b>Théodore Monod</b>
+          </p>
+        </div>
+        <a href="#" class="btn btn-success mt-5 ms-4">Show more</a>
       </div>
 
       <div class="container gx-5">
         <h1 class="pt-5">Costa Orientale</h1>
         <div class="d-flex justify-content-end">
           <button
-            class="btn btn-sm btn-primary mb-3 mt-3"
+            class="btn btn-sm btn-success mb-3 mt-3"
             data-bs-toggle="collapse"
             data-bs-target="#mySection"
             aria-expanded="false"
@@ -145,7 +166,7 @@
       <div class="collapse show" id="mySection">
         <div class="row row-gap-6 gx-xl-2 justify-content-between">
           <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <div class="card gx-4 border border-primary">
+            <div class="card gx-4 border border-success">
               <img
                 src="https://www.sardegnaturismo.it/sites/default/files/styles/larghezza_contenitore/public/attrattori/003_cala_goloritze_-_baunei_2_tn.jpg?itok=9rekWA-S"
                 class="card-img-top1"
@@ -157,12 +178,12 @@
                   Mare e monti s’incontrano armoniosamente in una perla del Mediterraneo, nella costa orientale
                   Sardegna, raggiungibile con un trekking nel Supramonte di Baunei
                 </p>
-                <a href="#" class="btn btn-primary">Show more</a>
+                <a href="#" class="btn btn-success">Show more</a>
               </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 g-0">
-            <div class="card border border-primary">
+            <div class="card border border-success">
               <img
                 src="https://www.paradisola.it/images/spiagge-sardegna/cala_luna_carlo_principe-2022.jpg"
                 class="card-img-top1"
@@ -174,12 +195,12 @@
                   Un laghetto d’acqua dolce che separa l’arenile sabbioso dal terreno retrostante, il boschetto di
                   oleandri che incornicia la spiaggia, e quel nome suggestivo che evoca romantiche luminescenze lunari.
                 </p>
-                <a href="#" class="btn btn-primary">Show more</a>
+                <a href="#" class="btn btn-success">Show more</a>
               </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <div class="card border border-primary">
+            <div class="card border border-success">
               <img
                 src="https://www.supramonteselvaggio.it/wp-content/uploads/2020/12/Selvaggio_Blu_thumb.jpg"
                 class="card-img-top1"
@@ -191,12 +212,12 @@
                   Dove è possibile ripercorrere i sentieri dei vecchi caprai, approfittando dell'ospitalità degli
                   antichi ovili, bene, quel posto esiste, ed è il Supramonte di Baunei.
                 </p>
-                <a href="#" class="btn btn-primary">Show more</a>
+                <a href="#" class="btn btn-success">Show more</a>
               </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <div class="card border border-primary">
+            <div class="card border border-success">
               <img
                 src="https://www.cuoredellasardegna.it/.galleries/img-notizie/nuraghesceri01.jpg"
                 class="card-img-top1"
@@ -208,7 +229,7 @@
                   Immerso nella macchia mediterranea che contraddistingue l’omonima vallata nella quale è situato, il
                   complesso archeologico Scerì, nel territorio di Ilbono
                 </p>
-                <a href="#" class="btn btn-primary">Show more</a>
+                <a href="#" class="btn btn-success">Show more</a>
               </div>
             </div>
           </div>
@@ -220,7 +241,7 @@
       <h1 class="pt-5">Welcome Summer</h1>
       <div class="d-flex justify-content-end">
         <button
-          class="btn btn-sm btn-primary"
+          class="btn btn-sm btn-success"
           data-bs-toggle="collapse"
           data-bs-target="#mySection"
           aria-expanded="false"
@@ -247,7 +268,7 @@
                   Alta ‘piramide’ calcarea che si erge dal mare, monumento naturale della costa ogliastrina di Baunei,
                   nella Sardegna centro-orientale, meta di trekking e climbing
                 </p>
-                <a href="#" class="btn btn-primary">Show more</a>
+                <a href="#" class="btn btn-success">Show more</a>
               </div>
             </div>
           </div>
@@ -264,7 +285,7 @@
                   C’è un posto fantastico in Sardegna, un luogo che sembra uscito dalle pagine di un libro, perfetto per
                   fare da sfondo alle storie raccontate nei libri fantasy. Si tratta di Arbatax
                 </p>
-                <a href="#" class="btn btn-primary">Show more</a>
+                <a href="#" class="btn btn-success">Show more</a>
               </div>
             </div>
           </div>
@@ -281,7 +302,7 @@
                   Una perla del golfo di Orosei, nella costa centro-orientale della Sardegna: caletta intima
                   caratterizzata da sassolini bianchi e rosa che rendono l'atmosfera magica ed emozionante
                 </p>
-                <a href="#" class="btn btn-primary">Show more</a>
+                <a href="#" class="btn btn-success">Show more</a>
               </div>
             </div>
           </div>
@@ -295,7 +316,7 @@
                   La gola di Gorropu è un profondo canyon ubicato nel Supramonte, in Sardegna, e demarca il confine tra
                   i comuni di Orgosolo e Urzulei.
                 </p>
-                <a href="#" class="btn btn-primary">Show more</a>
+                <a href="#" class="btn btn-success">Show more</a>
               </div>
             </div>
           </div>
@@ -312,7 +333,7 @@
                   La sfilata si è svolta nella seconda giornata delle Cortes Apertas di Orune, ultima tappa di Autunno
                   in Barbagia (foto Massimo Locci)
                 </p>
-                <a href="#" class="btn btn-primary">Show more</a>
+                <a href="#" class="btn btn-success">Show more</a>
               </div>
             </div>
           </div>
@@ -329,7 +350,7 @@
                   Chiunque abbia raggiunto almeno una volta la vetta del castello di Quirra, non può certo dimenticare
                   il fascino del paesaggio.
                 </p>
-                <a href="#" class="btn btn-primary">Show more</a>
+                <a href="#" class="btn btn-success">Show more</a>
               </div>
             </div>
           </div>
@@ -339,7 +360,7 @@
     <div class="container">
       <div class="d-flex justify-content-end">
         <button
-          class="btn btn-sm btn-primary mt-3 mb-3"
+          class="btn btn-sm btn-success mt-3 mb-3"
           data-bs-toggle="collapse"
           data-bs-target="#mySection"
           aria-expanded="false"
@@ -386,7 +407,7 @@
                   Il carnevale di Mamoiada è uno degli appuntamenti più importanti che avviene proprio nel cuore della
                   sardegna.
                 </p>
-                <a href="#" class="btn btn-primary align-self-flex.ends">Show more</a>
+                <a href="#" class="btn btn-success align-self-flex.ends">Show more</a>
               </div>
             </div>
           </div>
@@ -402,7 +423,7 @@
                 <p class="card-text">
                   I Boes, i Merdules e la Filonzana sono le principali maschere del carnevale di Ottana.
                 </p>
-                <a href="#" class="btn btn-primary" style="text-align: center">Show more</a>
+                <a href="#" class="btn btn-success" style="text-align: center">Show more</a>
               </div>
             </div>
           </div>
@@ -419,7 +440,7 @@
                   I Tacchi devono il nome alla forma appuntita, simile a tacchi di scarpa e caratterizzano il paesaggio
                   interno d'Ogliastra, in particolare di Ulassai.
                 </p>
-                <a href="#" class="btn btn-primary" style="text-align: end">Show more</a>
+                <a href="#" class="btn btn-success" style="text-align: end">Show more</a>
               </div>
             </div>
           </div>
@@ -436,7 +457,7 @@
                   La seconda più grande isola nel Mediterraneo, con oltre 1900 km di coste centinaia e centinaia di
                   bellisme spiaggie
                 </p>
-                <a href="#" class="btn btn-primary" style="text-align: end">Show more</a>
+                <a href="#" class="btn btn-success" style="text-align: end">Show more</a>
               </div>
             </div>
           </div>
@@ -453,7 +474,7 @@
                   Mare trasparente, spiaggie caraibiche e il blu del suo mare, questo è il Nord della Sardegna. Ma
                   questa terra antichissima e molto riservata offre molto di più.
                 </p>
-                <a href="#" class="btn btn-primary" style="text-align: end">Show more</a>
+                <a href="#" class="btn btn-success" style="text-align: end">Show more</a>
               </div>
             </div>
           </div>
@@ -466,7 +487,7 @@
                   Mare trasparente, spiaggie caraibiche e il blu del suo mare, questo è il Nord della Sardegna. Ma
                   questa terra antichissima e molto riservata offre molto di più.
                 </p>
-                <a href="#" class="btn btn-primary" style="text-align: end">Show more</a>
+                <a href="#" class="btn btn-success" style="text-align: end">Show more</a>
               </div>
             </div>
           </div>
@@ -479,24 +500,31 @@
         <div class="box2 d-flex flex-wrap">
           <img src="./assets/img/1487716857-user_81635.png" /> <b>Marco</b>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque praesentium saepe suscipit, molestiae sunt
-            repudiandae, dolor hic vel iste repellendus sapiente! Perferendis corporis, fugiat tenetur explicabo
-            architecto iure eligendi minus?
+            <i>
+              "Esperienza fantastica! Sono appena tornato dal viaggio organizzato da questa agenzia e non posso che
+              elogiare il loro servizio. L'organizzazione era impeccabile, gli hotel erano di prima classe e le attività
+              erano ben selezionate. Grazie per aver reso questa vacanza così memorabile!"</i
+            >
           </p>
         </div>
         <box class="box2 d-flex flex-wrap">
           <img src="./assets/img/1487716857-user_81635.png" /> <b>luca</b>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi illo excepturi, magnam voluptatum veniam
-            laborum? Voluptatibus quasi nulla natus! Commodi amet pariatur nulla? Nihil, ex accusamus molestias fugit
-            repudiandae blanditiis.
+            <i
+              >"Vacanza da sogno! Grazie a questa agenzia, ho vissuto una delle migliori vacanze della mia vita. Dal
+              momento della prenotazione fino al mio ritorno a casa, tutto è stato gestito alla perfezione. Consiglio
+              vivamente questa agenzia a chiunque cerchi un'esperienza di viaggio senza problemi."</i
+            >
           </p></box
         >
         <div class="box2 d-flex flex-wrap">
           <img src="./assets/img/1487716857-user_81635.png" /> <b>Giovanni</b>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita tempore quos, asperiores soluta inventore
-            culpa earum eum explicabo quas. Vero fugiat rem libero quas cum nostrum labore, sit corrupti dolorum.
+            <i>
+              "Assolutamente consigliato! Sono un cliente abituale di questa agenzia e non ho mai avuto motivo di
+              lamentarmi. Ogni volta che ho prenotato un viaggio con loro, sono rimasto soddisfatto del risultato. Hanno
+              un team incredibile che si assicura che ogni viaggio sia un successo."</i
+            >
           </p>
         </div>
       </div>
